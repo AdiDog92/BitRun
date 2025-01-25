@@ -1,0 +1,24 @@
+.container {
+  max-width: 1390px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.blue-text {
+  color: #0082FF;
+}
+
+.btn-blue {
+  border-radius: 12px;
+  background-color: #0082FF;
+  font-weight: 700;
+  line-height: 100%;
+  color: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .3s ease;
+
+  &:hover {
+    background-color: #0064CF;
+  }
+}

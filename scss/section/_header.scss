@@ -1,0 +1,62 @@
+.header {
+  margin: {
+    bottom: 101px;
+  };
+  padding: {
+    top: 23px;
+  };
+
+  .header__list {
+    gap: 32px;
+    margin: 0 auto;
+  }
+
+  .header__link {
+    position: relative;
+    padding: {
+      left: 0 !important;;
+      right: 0 !important;;
+    };
+    color: #030303;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 114%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 0;
+      bottom: 3px;
+      height: 2px;
+      background-color: #0082FF;
+      transition: .3s ease;
+    }
+
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+
+  .header__contact {
+    gap: 17px;
+    padding: {
+      left: 20px;
+    };
+  }
+
+  .header__phone-link {
+    color: #030303;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 114%;
+  }
+
+  .header__open-form {
+    padding: 16px 17px;
+    font-size: 11px;
+    letter-spacing: 0.77px;
+  }
+}
