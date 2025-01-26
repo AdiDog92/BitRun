@@ -28,7 +28,8 @@
     <!-- Загрузка шрифтов -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="libs/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/slick/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -312,12 +313,136 @@
     </section>
     <section class="feedback">
         <div class="container">
-            <h2>отзывы</h2>
+            <div class="feedback__inner row align-items-start justify-content-between">
+                <div class="col-6">
+                    <h2>
+                        Как <span class="badge text-bg-primary">увеличить прибыль</span>
+                        вашего бизнеса на 30%
+                        с Битрикс24
+                    </h2>
+                </div>
+                <div class="col-6">
+                    <div class="feedback__form-wrapper">
+                        <h3>Получите авторский <br>
+                            чек-лист от основателя BitRun</h3>
+                        <form>
+                            <div class="">
+                                <input
+                                        name="fio"
+                                        type="text"
+                                        class="form-control"
+                                        id="exampleInputFio"
+                                        aria-describedby="fioHelp"
+                                        placeholder="Имя"
+                                >
+                            </div>
+                            <div class="">
+                                <input
+                                        name="tel"
+                                        type="tel"
+                                        class="form-control"
+                                        id="exampleInputTel"
+                                        placeholder="Телефон"
+                                >
+                            </div>
+                            <button type="submit" class="btn">Получить чек-лист</button>
+                            <div class="form-check">
+                                <input
+                                        type="checkbox"
+                                        class="form-check-input"
+                                        id="exampleCheck"
+                                        checked
+                                >
+                                <label class="form-check-label" for="exampleCheck">Нажимая на кнопку, вы принимаете
+                                    политику конфиденциальности и даете согласие на обработку персональных
+                                    данных</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="price">
         <div class="container">
-
+            <h2 class="price__title"><b>Тарифы</b> Битрикс24</h2>
+            <p class="price__description">С <b>кэшбэком</b>, дополнительным <b>сроком действия и бонусами</b> от BitRun
+            </p>
+            <div class="price__inner">
+                <div class="price__change-tarif btn-group d-flex align-items-center" role="group"
+                     aria-label="Basic mixed styles example">
+                    <button type="button" class="price__cloud active">Облачная версия</button>
+                    <button type="button" class="price__box">Коробочная версия</button>
+                </div>
+                <div class="price__slider">
+                    <div class="price__slide d-flex flex-column justify-content-between">
+                        <div class="price__slide--top">
+                            <h3 class="price__slide-title">Бесплатный</h3>
+                            <p class="price__slide-descr">Начните работать онлайн и продавать больше с CRM</p>
+                        </div>
+                        <div class="price__slide--bottom">
+                            <p class="price__slide-user-count">Неограниченно пользователей</p>
+                            <p class="price__slide-tarif-memories"><span>5</span> гб</p>
+                            <p class="price__slide-tarif-cost">Бесплатно</p>
+                            <button class="price__slide-btn">купить</button>
+                        </div>
+                    </div>
+                    <div class="price__slide d-flex flex-column justify-content-between">
+                        <div class="price__slide--top">
+                            <h3 class="price__slide-title">Базовый</h3>
+                            <p class="price__slide-descr">Для эффективной работы небольших компаний и&nbsp;отделов
+                                продаж</p>
+                        </div>
+                        <div class="price__slide--bottom">
+                            <p class="price__slide-user-count"><span>5</span> пользователей</p>
+                            <p class="price__slide-tarif-memories"><span>24</span> гб</p>
+                            <p class="price__slide-tarif-cost">2490 р/мес</p>
+                            <button class="price__slide-btn">купить</button>
+                        </div>
+                    </div>
+                    <div class="price__slide d-flex flex-column justify-content-between">
+                        <div class="price__slide--top">
+                            <h3 class="price__slide-title">Стандартный</h3>
+                            <p class="price__slide-descr">Для максимальной автоматизации всех процессов в компании</p>
+                        </div>
+                        <div class="price__slide--bottom">
+                            <p class="price__slide-user-count"><span>50</span> пользователей</p>
+                            <p class="price__slide-tarif-memories"><span>100</span> гб</p>
+                            <p class="price__slide-tarif-cost">6990 р/мес</p>
+                            <button class="price__slide-btn">купить</button>
+                        </div>
+                    </div>
+                    <div class="price__slide d-flex flex-column justify-content-between">
+                        <div class="price__slide--top">
+                            <h3 class="price__slide-title">Профессиональный</h3>
+                            <p class="price__slide-descr">Для максимальной автоматизации всех процессов в компании</p>
+                        </div>
+                        <div class="price__slide--bottom">
+                            <p class="price__slide-user-count"><span>100</span> пользователей</p>
+                            <p class="price__slide-tarif-memories"><span>1024</span> гб</p>
+                            <p class="price__slide-tarif-cost">13990 р/мес</p>
+                            <button class="price__slide-btn">купить</button>
+                        </div>
+                    </div>
+                    <div class="price__slide d-flex flex-column justify-content-between">
+                        <div class="price__slide--top">
+                            <h3 class="price__slide-title">Энтерпрайз</h3>
+                            <p class="price__slide-descr">Для цифровизации крупного и среднего бизнеса на максимальных
+                                скоростях</p>
+                        </div>
+                        <div class="price__slide--bottom">
+                            <p class="price__slide-user-count">от 250 пользователей</p>
+                            <p class="price__slide-tarif-memories">от <span>3</span> тб</p>
+                            <p class="price__slide-tarif-cost">от 33 990 р/мес</p>
+                            <button class="price__slide-btn">купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="price__banner d-flex align-items-center">
+                    <div class="price__banner-text">Нужна помощь с выбором?</div>
+                    <button class="price__banner-btn btn-blue">заказать консультацию</button>
+                </div>
+            </div>
         </div>
     </section>
     <section class="reviews">
@@ -484,8 +609,9 @@
         </div>
     </div>
 </footer>
-<script src="libs/jquery.min.js"></script>
-<script src="libs/bootstrap.bundle.min.js"></script>
+<script src="libs/jquery/jquery.min.js"></script>
+<script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

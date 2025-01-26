@@ -1,0 +1,211 @@
+.price {
+  margin-bottom: 172px;
+
+  h2 {
+    max-width: 490px;
+    margin: 0 auto 36px;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 120%;
+    color: #242424;
+
+    b {
+      font-weight: 800;
+    }
+  }
+
+  .price__description {
+    max-width: 715px;
+    margin: 0 auto 47px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 1.19px;
+    color: #515151;
+
+    b {
+      font-weight: 700;
+    }
+  }
+
+  .price__inner {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .price__change-tarif {
+    width: fit-content;
+    margin: 0 auto 48px;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 24px;
+    background: #E7E7E7;
+
+    button {
+      width: fit-content;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 100%;
+      color: #838383;
+      letter-spacing: 0.84px;
+      text-transform: uppercase;
+      border-radius: 16px;
+      background: #F3F3F3;
+      transition: .3s ease;
+
+      &.active {
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.20);
+        color: #242424;
+      }
+    }
+  }
+
+  .price__slider {
+    display: flex;
+    margin-bottom: 48px;
+
+    .slick-next,
+    .slick-prev {
+      position: absolute;
+      z-index: 20;
+      top: 50%;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      border: 1.5px solid #DFDFDF;
+      background: #FFF;
+      box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+      transform: translateY(-50%);
+      color: #D9D9D9;
+      font-size: 20px;
+      transition: .3s ease;
+
+      &:hover {
+        color: #0082FF;
+      }
+    }
+
+    .slick-next {
+      right: -20px;
+    }
+
+    .slick-prev {
+      left: -20px;
+    }
+  }
+
+  .slick-track {
+    height: 100%;
+  }
+
+  .price__slide {
+    height: 100%;
+    margin: {
+      left: 12px;
+      right: 12px;
+    };
+    padding: 40px;
+    border-radius: 24px;
+    background: #FFF;
+    text-align: center;
+
+    &--top {
+      margin-bottom: 40px;
+
+      .price__slide-title {
+        margin-bottom: 12px;
+        font-size: 20px;
+        font-weight: 800;
+        color: #242424;
+      }
+
+      .price__slide-descr {
+        color: #959595;
+      }
+    }
+
+    &--bottom {
+
+      .price__slide-user-count {
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: #959595;
+
+        span {
+          color: #0082FF;
+        }
+      }
+
+      .price__slide-tarif-memories {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 800;
+        color: #959595;
+
+        span {
+          color: #0082FF;
+        }
+      }
+
+      .price__slide-tarif-cost {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 800;
+        color: #242424;
+      }
+
+      .price__slide-btn {
+        width: 100%;
+        padding: 20px;
+        border-radius: 16px;
+        border: 1.5px solid #0082FF;
+        color: #242424;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: 0.84px;
+        text-transform: uppercase;
+        transition: .3s ease;
+
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+
+  }
+
+  .price__banner {
+    padding: 16px;
+    border-radius: 24px;
+    background: linear-gradient(127deg, rgba(255, 255, 255, 0.50) 0.11%, rgba(255, 255, 255, 0.14) 7.96%, rgba(255, 55, 48, 0.00) 7.99%), linear-gradient(94deg, #242424 68.67%, #0062C8 91.54%), #FFF;
+
+    div {
+      margin-left: auto;
+      max-width: 648px;
+      width: 100%;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 120%;
+      color: #FFF;
+    }
+
+    button {
+      margin: {
+        left: auto;
+      };
+      padding: 20px;
+      color: #FFF;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: 1.12px;
+      text-transform: uppercase;
+    }
+  }
+}
