@@ -69,7 +69,7 @@
   }
 
   .tab-content {
-    >.active {
+    > .active {
       display: flex;
     }
   }
@@ -112,7 +112,9 @@
     flex: 1;
 
     .tab-pane {
+      position: relative;
       justify-content: space-between;
+      overflow: hidden;
     }
 
     .tab-presentation {
@@ -133,12 +135,14 @@
           font-weight: 800;
           line-height: 120%;
         }
+
         p {
           margin-bottom: 24px;
           font-size: 14px;
           font-weight: 400;
           line-height: 140%;
         }
+
         ul {
           li {
             font-size: 14px;
@@ -147,23 +151,29 @@
           }
         }
       }
+
       &--bottom {
         flex: 1;
+
         img {
           height: 100%;
           object-fit: cover;
         }
       }
     }
+
     .tab-info {
       max-width: 404px;
       padding: {
         top: 49px;
       };
+
       .cases__results {
         margin-bottom: 56px;
+
         li {
           margin-bottom: 48px;
+
           .text-with-border {
             margin-bottom: 12px;
             font-size: 32px;
@@ -172,12 +182,14 @@
             color: #fff;
             filter: drop-shadow(1px 1px 0 #0082FF) drop-shadow(-1px -1px 0 #0082FF) drop-shadow(1px -1px 0 #0082FF) drop-shadow(-1px 1px 0 #0082FF);
           }
+
           .small-text {
             color: #242424;
           }
         }
       }
     }
+
     .cases__task-title {
       margin-bottom: 28px;
       font-size: 24px;
@@ -185,12 +197,14 @@
       line-height: 120%;
       color: #242424;
     }
+
     .cases__tasks {
       li {
         display: flex;
         align-items: start;
         gap: 12px;
         margin-bottom: 32px;
+
         .icon {
           flex: 0 0 16px;
           width: 16px;
@@ -203,4 +217,40 @@
       }
     }
   }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(15%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.tab-pane.fade.show.active {
+  animation: slideInFromRight 0.7s ease;
+}
+
+.tab-pane.fade:not(.show) {
+  animation: fadeOut 0.5s ease;
+}
+
+.tab-pane.fade:not(.show) {
+  display: none;
+}
+
+.tab-pane.fade.show.active {
+  display: flex;
 }
