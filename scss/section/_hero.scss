@@ -4,7 +4,7 @@
   };
 
   .hero__banner,
-  .hero__partners {
+  .partners {
     max-width: 1271px;
     margin: 0 auto;
   }
@@ -68,22 +68,22 @@
     font-size: 18px;
     letter-spacing: 1.44px;
   }
+}
 
-  .hero__partners {
-    .row {
-      gap: 32px;
-    }
-
-    .hero__partners-card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        object-fit: contain;
-        max-height: 51px;
-      }
-    }
+.partners {
+  .row {
+    gap: 32px;
   }
 
+  .hero__partners-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      object-fit: contain;
+      max-height: 51px;
+    }
+  }
 }
+

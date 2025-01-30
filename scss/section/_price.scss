@@ -56,17 +56,27 @@
       transition: .3s ease;
 
       &.active {
-        border-radius: 16px;
-        background: #FFF;
-        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.20);
-        color: #242424;
+        background: #0082FF;
+        color: #fff;
+        box-shadow: 0px 4px 16px rgba(0, 130, 255, 0.3);
       }
     }
   }
 
-  .price__slider {
+  .price__wrapper {
     display: flex;
     margin-bottom: 48px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    .slick-list {
+      padding-top: 12px;
+    }
+
+    &.d-none {
+      opacity: 0;
+      transform: translateY(10px);
+      pointer-events: none;
+    }
 
     .slick-next,
     .slick-prev {
@@ -85,7 +95,8 @@
       transition: .3s ease;
 
       &:hover {
-        color: #0082FF;
+        background-color: #0082FF;
+        color: #fff;
       }
     }
 
@@ -102,7 +113,8 @@
     height: 100%;
   }
 
-  .price__slide {
+  .price__card {
+    max-width: 344px;
     height: 100%;
     margin: {
       left: 12px;
@@ -112,25 +124,30 @@
     border-radius: 24px;
     background: #FFF;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    }
 
     &--top {
       margin-bottom: 40px;
 
-      .price__slide-title {
+      .price__card-title {
         margin-bottom: 12px;
         font-size: 20px;
         font-weight: 800;
         color: #242424;
       }
 
-      .price__slide-descr {
+      .price__card-descr {
         color: #959595;
       }
     }
 
     &--bottom {
-
-      .price__slide-user-count {
+      .price__card-user-count {
         margin-bottom: 20px;
         font-weight: 700;
         color: #959595;
@@ -140,7 +157,7 @@
         }
       }
 
-      .price__slide-tarif-memories {
+      .price__card-tarif-memories {
         margin-bottom: 20px;
         font-size: 20px;
         font-weight: 800;
@@ -151,14 +168,14 @@
         }
       }
 
-      .price__slide-tarif-cost {
+      .price__card-tarif-cost {
         margin-bottom: 20px;
         font-size: 20px;
         font-weight: 800;
         color: #242424;
       }
 
-      .price__slide-btn {
+      .price__card-btn {
         width: 100%;
         padding: 20px;
         border-radius: 16px;
@@ -173,39 +190,47 @@
         transition: .3s ease;
 
         &:hover {
-          opacity: .7;
+          background-color: #0082FF;
+          color: #fff;
         }
       }
     }
-
   }
 
   .price__banner {
-    padding: 16px;
+    padding: 20px;
     border-radius: 24px;
     background: linear-gradient(127deg, rgba(255, 255, 255, 0.50) 0.11%, rgba(255, 255, 255, 0.14) 7.96%, rgba(255, 55, 48, 0.00) 7.99%), linear-gradient(94deg, #242424 68.67%, #0062C8 91.54%), #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     div {
-      margin-left: auto;
-      max-width: 648px;
-      width: 100%;
-      text-align: center;
-      font-size: 32px;
+      font-size: 24px;
       font-weight: 300;
       line-height: 120%;
-      color: #FFF;
+      color: #fff;
     }
 
     button {
-      margin: {
-        left: auto;
-      };
-      padding: 20px;
-      color: #FFF;
+      background: #fff;
+      color: #0082FF;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 12px;
       font-weight: 700;
-      line-height: 100%;
-      letter-spacing: 1.12px;
-      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+
+  #boxWersion {
+    .price__card {
+      flex: 1;
+      height: auto;
     }
   }
 }
