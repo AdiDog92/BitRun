@@ -1,0 +1,153 @@
+.advantages {
+  margin-bottom: 127px;
+
+  .advantages__percent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 968px;
+    margin: 0 auto;
+
+    .sum {
+      font-size: 192px;
+      font-weight: 900;
+      line-height: 120%;
+      letter-spacing: -13.44px;
+      color: #FFF;
+      filter: drop-shadow(1px 1px 0 #0082FF) drop-shadow(-1px -1px 0 #0082FF) drop-shadow(1px -1px 0 #0082FF) drop-shadow(-1px 1px 0 #0082FF);
+
+      span {
+        font-size: 103px;
+      }
+    }
+
+    .text__wrapper {
+      display: flex;
+      flex-direction: column;
+      font-size: 48px;
+      line-height: 120%;
+      color: #242424;
+
+      b {
+        font-weight: 800;
+      }
+
+      span {
+        font-weight: 300;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      z-index: -1;
+      top: -57px;
+      left: 108px;
+    }
+  }
+
+  .advantages__slider {
+    width: calc(100% - (100% - 1390px) / 2);
+    margin: {
+      top: -48px;
+      bottom: 24px;
+      left: 254px;
+    };
+    overflow: hidden;
+
+    .advantages__slide {
+      position: relative;
+      height: 205px;
+      margin: 0 12px;
+      padding: 48px;
+      border-radius: 32px;
+      background: #FFF;
+
+      .badge__number {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 48px;
+        height: 25px;
+        margin-bottom: 17px;
+        padding: 4px 17px;
+        font-size: 12px;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        color: #FFF;
+        text-align: center;
+        border-radius: 23px;
+        background: #FF8300;
+      }
+
+      .text {
+        position: relative;
+        z-index: 1;
+        color: #242424;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 140%;
+        transition: .3s ease;
+      }
+
+      button {
+        padding: 9px;
+        color: #FFF;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: 1.12px;
+        text-transform: uppercase;
+        border-radius: 16px;
+        background: #0082FF;
+      }
+
+      &.slick-current {
+        img {
+          opacity: 1;
+        }
+
+        .text {
+          color: #fff;
+        }
+      }
+
+      img {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: .3s ease;
+      }
+    }
+  }
+
+  .slider__button-wrapper {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 24px auto 0;
+
+    .slick-next,
+    .slick-prev {
+      top: 50%;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      border: 1.5px solid #DFDFDF;
+      background: #FFF;
+      box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08);
+      transform: translateY(-50%);
+      color: #D9D9D9;
+      font-size: 20px;
+      transition: .3s ease;
+
+      &:hover {
+        background-color: #0082FF;
+        color: #fff;
+      }
+    }
+
+  }
+}

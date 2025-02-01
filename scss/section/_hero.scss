@@ -3,6 +3,18 @@
     bottom: 101px;
   };
 
+  @media (max-width: 992px) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 40px;
+  }
+
   .hero__banner,
   .partners {
     max-width: 1271px;
@@ -17,6 +29,21 @@
     font-size: 48px;
     font-weight: 800;
     line-height: 120%;
+
+    @media (max-width: 992px) {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
   }
 
   .hero__banner {
@@ -25,65 +52,177 @@
     border-radius: 24px;
     background: #FFF;
     box-shadow: 0px 51.314px 102.627px 0px rgba(70, 71, 78, 0.20);
-  }
 
-  .hero__banner-title {
-    margin: {
-      top: 22px;
-      bottom: 36px;
-    };
-    color: #242424;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-  }
+    @media (max-width: 992px) {
+      padding: 40px 0 40px 40px;
+    }
 
-  .hero__banner-list {
-    margin: {
-      bottom: 38px;
-    };
-  }
+    @media (max-width: 768px) {
+      padding: 20px;
+      margin-bottom: 60px;
+    }
 
-  .hero__banner-text {
-    padding: 10px 0;
-    gap: 10px;
+    @media (max-width: 576px) {
+      padding: 15px;
+      margin-bottom: 40px;
+    }
 
-    .icon {
-      flex: 0 0 auto;
-      width: 32px;
-      height: 32px;
-      padding: 7px;
-      background-color: #54B951;
-      border-radius: 50%;
+    .hero__banner-title {
+      margin: {
+        top: 22px;
+        bottom: 36px;
+      };
+      color: #242424;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%;
+
+      @media (max-width: 992px) {
+        font-size: 28px;
+      }
+
+      @media (max-width: 768px) {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 20px;
+      }
+    }
+
+    .hero__banner-list {
+      margin: {
+        bottom: 38px;
+      };
+
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+    }
+
+    .hero__banner-text {
+      padding: 10px 0;
+      gap: 10px;
+
+      @media (max-width: 768px) {
+        max-width: 450px;
+        margin: 0 auto;
+      }
+
+      .icon {
+        flex: 0 0 auto;
+        width: 32px;
+        height: 32px;
+        padding: 7px;
+        background-color: #54B951;
+        border-radius: 50%;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+
+        @media (max-width: 768px) {
+          width: 24px;
+          height: 24px;
+          font-size: 14px;
+          padding: 5px;
+        }
+      }
+
+      .text {
+        @media (max-width: 768px) {
+          font-size: 14px;
+        }
+
+        br {
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .hero_banner-btn {
+      width: fit-content;
+      padding: 28px 68.5px;
       font-size: 18px;
-      font-weight: 700;
-      color: #fff;
+      letter-spacing: 1.44px;
+
+      @media (max-width: 992px) {
+        padding: 20px 40px;
+        font-size: 16px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+      }
+    }
+
+    .hero__prev {
+      @media (max-width: 768px) {
+        overflow: hidden;
+      }
+
+      img {
+        @media (max-width: 768px) {
+          max-width: 100%;
+          height: auto;
+          margin: {
+            top: 20px;
+            left: 20px;
+          };
+        }
+      }
+    }
+
+
+  }
+
+  .partners {
+    .row {
+      gap: 32px;
+
+      @media (max-width: 992px) {
+        gap: 20px;
+      }
+
+      @media (max-width: 768px) {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    .hero__partners-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        flex: 0 0 calc(25% - 15px);
+      }
+
+      @media (max-width: 576px) {
+        flex: 0 0 calc(33.33% - 10px);
+      }
+
+      img {
+        object-fit: contain;
+        max-height: 51px;
+
+        @media (max-width: 992px) {
+          max-height: 40px;
+        }
+
+        @media (max-width: 768px) {
+          max-height: 30px;
+        }
+      }
     }
   }
-
-  .hero_banner-btn {
-    width: fit-content;
-    padding: 28px 68.5px;
-    font-size: 18px;
-    letter-spacing: 1.44px;
-  }
 }
-
-.partners {
-  .row {
-    gap: 32px;
-  }
-
-  .hero__partners-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img {
-      object-fit: contain;
-      max-height: 51px;
-    }
-  }
-}
-
