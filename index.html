@@ -48,22 +48,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="header__list navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="header__item nav-item">
-                            <a class="header__link nav-link active" aria-current="page" href="#">О нас</a>
+                            <a class="header__link nav-link active" aria-current="page" href="#about">О нас</a>
                         </li>
                         <li class="header__item nav-item">
-                            <a class="header__link nav-link" href="#">Услуги</a>
+                            <a class="header__link nav-link" href="#services">Услуги</a>
                         </li>
                         <li class="header__item nav-item">
-                            <a class="header__link nav-link" href="#">Лицензии</a>
+                            <a class="header__link nav-link" href="#price">Лицензии</a>
                         </li>
                         <li class="header__item nav-item">
-                            <a class="header__link nav-link" href="#">Кейсы</a>
+                            <a class="header__link nav-link" href="#cases">Кейсы</a>
                         </li>
                         <li class="header__item nav-item">
-                            <a class="header__link nav-link" href="#">Отзывы</a>
+                            <a class="header__link nav-link" href="#reviews">Отзывы</a>
                         </li>
                         <li class="header__item nav-item">
-                            <a class="header__link nav-link" href="#">Контакты</a>
+                            <a class="header__link nav-link" href="#footer">Контакты</a>
                         </li>
                     </ul>
 
@@ -77,7 +77,7 @@
     </div>
 </header>
 <main class="main">
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="container">
             <div class="hero__inner">
                 <h1 class="hero__title">Внедрим и <span class="blue-text">настроим</span> Битрикс24 за <span
@@ -151,7 +151,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="stats__inner">
                 <div class="stats__banner row">
@@ -245,7 +245,7 @@
             </div>
         </div>
     </section>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
         <div class="container">
             <div class="advantages__percent">
                 <div class="sum">97<span>%</span></div>
@@ -355,7 +355,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <h2 class="services__title">Наши услуги</h2>
             <p class="services__description">Комплексный подход от ТОП-интегратора России
@@ -411,11 +411,10 @@
             </div>
         </div>
     </section>
-    <section class="cases">
+    <section id="cases" class="cases">
         <div class="container">
             <div class="cases__inner">
                 <h2><b>Наши кейсы</b> и клиенты</h2>
-
                 <div class="partners">
                     <div class="row align-items-center">
                         <div class="hero__partners-card col">
@@ -452,35 +451,23 @@
                     <div class="img">
                         <svg width="275" height="300" viewBox="0 0 275 275" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
-                            &lt;!&ndash; Определение фильтра для мерцающей тени &ndash;&gt;
                             <defs>
                                 <filter id="flickerShadow" x="-50%" y="-50%" width="200%" height="200%">
-                                    &lt;!&ndash; Тень с анимацией &ndash;&gt;
                                     <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#000000"
                                                   flood-opacity="0.7">
-                                        &lt;!&ndash; Анимация прозрачности &ndash;&gt;
                                         <animate attributeName="flood-opacity" values="0.7;0.3;0.7" dur="1.5s"
                                                  repeatCount="indefinite"/>
-                                        &lt;!&ndash; Анимация размытия &ndash;&gt;
                                         <animate attributeName="stdDeviation" values="5;10;5" dur="1.5s"
                                                  repeatCount="indefinite"/>
                                     </feDropShadow>
                                 </filter>
                             </defs>
-
-                            &lt;!&ndash; Первый путь с применением фильтра мерцающей тени &ndash;&gt;
                             <path d="M137.5 8C137.5 3.58173 141.085 -0.0242579 145.496 0.232661C160.819 1.12519 175.904 4.57837 190.119 10.4666C206.801 17.3766 221.959 27.5048 234.727 40.2728C247.495 53.0409 257.623 68.1988 264.533 84.881C270.422 99.0964 273.875 114.181 274.767 129.504C275.024 133.915 271.418 137.5 267 137.5H223.01C218.591 137.5 215.052 133.909 214.597 129.514C213.827 122.076 211.982 114.773 209.11 107.838C205.214 98.4345 199.505 89.8899 192.308 82.6924C185.11 75.495 176.566 69.7857 167.162 65.8904C160.227 63.0179 152.924 61.1734 145.486 60.4029C141.091 59.9476 137.5 56.4086 137.5 51.9904V8Z"
                                   fill="url(#paint0_linear_2026_582)" filter="url(#flickerShadow)"/>
-
-                            &lt;!&ndash; Второй путь с применением фильтра мерцающей тени &ndash;&gt;
                             <path d="M137.5 8C137.5 3.58173 141.085 -0.0242579 145.496 0.232661C160.819 1.12519 175.904 4.57837 190.119 10.4666C206.801 17.3766 221.959 27.5048 234.727 40.2728C247.495 53.0409 257.623 68.1988 264.533 84.881C270.422 99.0964 273.875 114.181 274.767 129.504C275.024 133.915 271.418 137.5 267 137.5H223.01C218.591 137.5 215.052 133.909 214.597 129.514C213.827 122.076 211.982 114.773 209.11 107.838C205.214 98.4345 199.505 89.8899 192.308 82.6924C185.11 75.495 176.566 69.7857 167.162 65.8904C160.227 63.0179 152.924 61.1734 145.486 60.4029C141.091 59.9476 137.5 56.4086 137.5 51.9904V8Z"
                                   fill="url(#paint1_linear_2026_582)" filter="url(#flickerShadow)"/>
-
-                            &lt;!&ndash; Третий путь с применением фильтра мерцающей тени &ndash;&gt;
                             <path d="M203 161.5C207.418 161.5 211.034 165.088 210.672 169.491C209.318 185.958 203.796 201.858 194.568 215.668C183.855 231.702 168.627 244.199 150.812 251.578C132.996 258.958 113.392 260.889 94.4787 257.127C75.5655 253.365 58.1927 244.079 44.5571 230.443C30.9215 216.807 21.6355 199.434 17.8734 180.521C14.1114 161.608 16.0422 142.004 23.4217 124.188C30.8013 106.373 43.2981 91.1451 59.3319 80.4317C73.1422 71.204 89.0421 65.6821 105.509 64.328C109.912 63.9659 113.5 67.5817 113.5 72V100.352C113.5 104.77 109.898 108.29 105.53 108.953C97.8501 110.118 90.4851 112.958 83.9726 117.309C75.2325 123.149 68.4204 131.45 64.3977 141.161C60.3751 150.873 59.3226 161.559 61.3733 171.869C63.424 182.178 68.4859 191.648 75.9188 199.081C83.3516 206.514 92.8217 211.576 103.131 213.627C113.441 215.677 124.127 214.625 133.839 210.602C143.55 206.58 151.851 199.768 157.691 191.027C162.042 184.515 164.882 177.15 166.047 169.47C166.71 165.102 170.23 161.5 174.648 161.5H203Z"
                                   fill="#E9E9E9" filter="url(#flickerShadow)"/>
-
-                            &lt;!&ndash; Градиенты &ndash;&gt;
                             <defs>
                                 <linearGradient id="paint0_linear_2026_582" x1="250.686" y1="0" x2="250.686" y2="211.28"
                                                 gradientUnits="userSpaceOnUse">
@@ -498,7 +485,6 @@
 
                     </div>
                 </div>
-
                 <div class="tabs-container">
                     <ul class="nav nav-tabs" id="myTabs" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -994,47 +980,47 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        Vitra
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Внедрение Битрикс 24 в российское подразделение международной компании по производству сантехники
                                     </p>
                                     <ul class="licenses">
                                         <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
-                                        <li><b>срок:</b> 2 месяца</li>
+                                        <li><b>пользователей:</b> 25</li>
+                                        <li><b>срок:</b> 1 месяц</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/7.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            более 3 часов
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            в день экономии на мониторинге отчетов и формировании бонусов
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            на 15%
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            быстрее скорость ведения проектов и принятия задач
+                                            в работу
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            на 18%
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            больше суммарная конверсия продвижения сделок
+                                            с этапа на этап
                                         </p>
                                     </li>
                                 </ul>
@@ -1042,17 +1028,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">выстроить на базе Битрикс24 систему по работе с дистрибьюторами и систему по сбору результатов их деятельности</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">организовать пространство для проектной работы отдела маркетинга</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">осуществить базовые настройки для работы отдела продаж: воронки, коммуникации, документы</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1061,47 +1047,45 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        Ecologix Lab
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Систематизация процессов на базе Битрикс 24 для компании в сфере электроэнергетики
                                     </p>
                                     <ul class="licenses">
-                                        <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
-                                        <li><b>срок:</b> 2 месяца</li>
+                                        <li><b>лицензия:</b> облачная</li>
+                                        <li><b>пользователей:</b> 32</li>
+                                        <li><b>срок:</b> 1 месяц</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/8.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            до 20 минут
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            сократилась скорость получения согласований внутри компании (с 3х часов)
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            более 150
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            рутинных операций было ускорено в рамках реализованных процессов на базе Битрикс24
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            >30
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            параметров информации фиксируется по каждому клиенту в базе
                                         </p>
                                     </li>
                                 </ul>
@@ -1109,17 +1093,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">автоматизация 5-ти комплексных процессов компании, включающих в себя более 40 этапов</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">настройка направлений для ведения сделок под специфику деятельности компании</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">расширение возможностей по учету клиентов и информации по ним</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1128,47 +1112,45 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        ЦРСВ
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Внедрение Битрикс24 в государственную компанию по развитию трудоустройства и HR процессов на территории РФ
                                     </p>
                                     <ul class="licenses">
                                         <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
-                                        <li><b>срок:</b> 2 месяца</li>
+                                        <li><b>пользователей:</b> 80</li>
+                                        <li><b>срок:</b> 1 месяц</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/9.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            14 процессов
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            различных отделов были ускорены, суммарное время экономии на которых превышает 50 часов
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            3 дня
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            на столько сократился цикл по успешной сделке
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            100%
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            гарантия безопасности данных. Все обращения попадают в отдел продаж и распределяются менеджерами
                                         </p>
                                     </li>
                                 </ul>
@@ -1176,17 +1158,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">автоматизация процесса продаж, закупок и тендеров</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">создание инструмента для работы всей компании и смежных подразделений</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">подключение сайта и каналов коммуникаций к Битрикс24 для работы с лидами</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1195,47 +1177,45 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        Yana Svetlova
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Комплексное внедрение Битрикс 24 в компанию, специализирующуюся на обоях премиального сегмента
                                     </p>
                                     <ul class="licenses">
-                                        <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
-                                        <li><b>срок:</b> 2 месяца</li>
+                                        <li><b>лицензия:</b> облачная</li>
+                                        <li><b>пользователей:</b> 18</li>
+                                        <li><b>срок:</b> 1 месяц</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/10.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            100%
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            автоматизированный процесс логистики, экономия более 2х часов в день на рутинных задачах
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            на 20%
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            больше сделок стали обрабатывать менеджеры, все коммуникации подключены к Битрикс24
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            100%
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            верное видение о продажах и востребованных товарах
                                         </p>
                                     </li>
                                 </ul>
@@ -1243,17 +1223,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">создание функционального инструмента для работы отдела продаж</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">организация работы отдела логистики на базе Битрикс24</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">настройка отчетов по продажам и финансам для удобной работы руководящего состава</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1262,47 +1242,45 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        РВД-групп
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Систематизация процессов торгово-производственной компании в Битрикс24
                                     </p>
                                     <ul class="licenses">
-                                        <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
-                                        <li><b>срок:</b> 2 месяца</li>
+                                        <li><b>лицензия:</b> облачная</li>
+                                        <li><b>пользователей:</b> 15</li>
+                                        <li><b>срок:</b> 3 недели</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/11.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            100%
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            прозрачность работы всех отделов компании
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            на 60
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            потенциальных клиентов стало больше ежемесячно
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            100%
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            заявок поступают в обработку
                                         </p>
                                     </li>
                                 </ul>
@@ -1310,17 +1288,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">исключить возможность потери обращений из-за ручной обработки заявок менеджерами</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">объединить работу мастерской, отдела продаж, закупок и склада в одной программе, интегрировать 1С УНФ</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">настроить Битрикс24 для контроля активности сотрудников и автоматизации процессов</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1329,47 +1307,45 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        НЦРБ
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Внедрение и настройка Битрикс 24 для центральной районной больницы
                                     </p>
                                     <ul class="licenses">
-                                        <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
-                                        <li><b>срок:</b> 2 месяца</li>
+                                        <li><b>лицензия:</b> облачная</li>
+                                        <li><b>пользователей:</b> 38</li>
+                                        <li><b>срок:</b> 1 месяц</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/12.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            за 18 секунд
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            операторы понимают занятость палат и график нужного врача
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            12
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            рутинных операций выявлены и полностью автоматизированы.
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            на 9 мин
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            снизилось среднее время записи пациента на прием
                                         </p>
                                     </li>
                                 </ul>
@@ -1377,17 +1353,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">ведение записей пациентов к врачам в Битрикс24, оперативное понимание загрузки специалистов</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">учет пациентов и занятости палат в больнице</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">формирование архива документов в онлайн формате</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1396,47 +1372,45 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        «Закон»
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Внедрение Битрикс24 в отдел продаж юридической компании
                                     </p>
                                     <ul class="licenses">
-                                        <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
-                                        <li><b>срок:</b> 2 месяца</li>
+                                        <li><b>лицензия:</b> облачная</li>
+                                        <li><b>пользователей:</b> 5</li>
+                                        <li><b>срок:</b> 2 недели</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/13.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            на 100.000₽
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            ежемесячно настройки CRM помогли увеличить продажи и снизить % потери клиентов
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            99,9%
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            встреч фиксируются в Битрикс24, календарь помогает эффективно планировать все активности
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            < 1мин
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            уходит на поиск любого документа, все автоматически сохраняется в архив
                                         </p>
                                     </li>
                                 </ul>
@@ -1444,17 +1418,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">перенести ведение клиентов из Excel в CRM Битрикс24</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">организовать возможность планирования встреч и судебных заседаний в рамках системы</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">сформировать пространство для хранения документации и архивов</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1463,47 +1437,45 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        Gallery
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Внедрение Битрикс24 для одного из крупнейших операторов рекламы в России
                                     </p>
                                     <ul class="licenses">
                                         <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
-                                        <li><b>срок:</b> 2 месяца</li>
+                                        <li><b>пользователей:</b> 250</li>
+                                        <li><b>срок:</b> 3 месяца</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/14.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            на 12%
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            ускорена работа сотрудников
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            14
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            процессов автоматизировано
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            20+
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            отчетов настроено в CRM
                                         </p>
                                     </li>
                                 </ul>
@@ -1511,17 +1483,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">оптимизация процесса продаж и внедрение многофункциональной системы аналитики</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">интеграция с внешними специализированными системами: 1С и Charting Pro</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">создание единого корпоративного портала для работы всей компании</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1530,47 +1502,45 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        La Mare
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Внедрение Битрикс24 для одного из крупнейших импортеров морепродуктов в России + сети премиальных ресторанов
                                     </p>
                                     <ul class="licenses">
-                                        <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
+                                        <li><b>лицензия:</b> облачная</li>
+                                        <li><b>пользователей:</b> 60</li>
                                         <li><b>срок:</b> 2 месяца</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/15.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            в 1,5 раза
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            ускорилось стратегическое планирование, отчеты помогают понять сроки поставок и суммы продаж
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            на 35%
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            меньше просроченных задач, регулярно в системе ведется более 30 проектов компании
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            100%
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            сотрудников работают в Битрикс24, вся информация хранится в системе
                                         </p>
                                     </li>
                                 </ul>
@@ -1578,17 +1548,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">внедрить систему для проектного управления и логистики</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">организовать удобное взаимодействие между сотрудниками и отделами</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">сформировать учет по продажам и поставкам</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1597,47 +1567,46 @@
                             <div class="tab-presentation">
                                 <div class="tab-presentation&#45;&#45;top">
                                     <h3 class="company">
-                                        Secret Technologies
+                                        Zhendong
                                     </h3>
                                     <p class="desr">
-                                        Внедрение и доработка Б24 для компании, специализирующейся на IT-безопасности
-                                        для крупных и государственных предприятий коробочная
+                                        Внедрение Битрикс24 в российское подразделение международной логистической компании
                                     </p>
                                     <ul class="licenses">
-                                        <li><b>лицензия:</b> коробочная</li>
-                                        <li><b>пользователей:</b> 45</li>
-                                        <li><b>срок:</b> 2 месяца</li>
+                                        <li><b>лицензия:</b> облачная</li>
+                                        <li><b>пользователей:</b> 8</li>
+                                        <li><b>срок:</b> 3 недели</li>
                                     </ul>
                                 </div>
                                 <div class="tab-presentation&#45;&#45;bottom">
-                                    <img src="images/tabs/1.webp" alt="">
+                                    <img src="images/tabs/16.png" alt="">
                                 </div>
                             </div>
                             <div class="tab-info">
                                 <ul class="cases__results">
                                     <li>
                                         <p class="text-with-border">
-                                            99,941%
+                                            более 100
                                         </p>
                                         <p class="small-text">
-                                            составил коэффициент отказоустойчивости при нагрузочных тестах
+                                            сообщений о статусах в месяц уходят клиентам автоматически без участия менеджеров
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            6%
+                                            в 4 раза
                                         </p>
                                         <p class="small-text">
-                                            экономия бюджетов компании на pre- sale,
-                                            по всем сделкам виден коэффициент маржинальности
+                                            быстрее система помогает менеджеру понять информацию
+                                            о задержке заказа
                                         </p>
                                     </li>
                                     <li>
                                         <p class="text-with-border">
-                                            за 6 мин
+                                            на 20%
                                         </p>
                                         <p class="small-text">
-                                            готовятся коммерческие предложения даже по крупным сделкам
+                                            выросли повторные обращения клиентов
                                         </p>
                                     </li>
                                 </ul>
@@ -1645,17 +1614,17 @@
                                 <ul class="cases__tasks">
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">организация безопасной и отказоустойчивой системы для работы отдела продаж</span>
+                                        <span class="text">настройка пространства для отслеживания грузов и их статусов, ведения заказов</span>
                                     </li>
                                     <li>
                                         <span class="icon"><i class="bi bi-check"></i></span>
-                                        <span class="text">настройка отчетов по маржинальности сделок и суммам продаж</span>
+                                        <span class="text">повышение качества сервиса за счёт автоматического уведомления заказчиков о статусах их заказов</span>
                                     </li>
                                     <li>
                                         <span class="icon">
                                             <i class="bi bi-check"></i>
                                         </span>
-                                        <span class="text">снижение трудозатрат на подготовку коммерческих предложений</span>
+                                        <span class="text">ускорение формирования накладных и отгрузочных документов для транспортных компаний</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1666,7 +1635,7 @@
         </div>
         </div>
     </section>
-    <section class="feedback">
+    <section id="feedback" class="feedback">
         <div class="container">
             <div class="feedback__inner row align-items-start justify-content-between">
                 <div class="col-6">
@@ -1718,7 +1687,7 @@
             </div>
         </div>
     </section>
-    <section class="price">
+    <section id="price" class="price">
         <div class="container">
             <h2 class="price__title"><b>Тарифы</b> Битрикс24</h2>
             <p class="price__description">С <b>кэшбэком</b>, дополнительным <b>сроком действия и бонусами</b> от BitRun
@@ -1835,7 +1804,7 @@
             </div>
         </div>
     </section>
-    <section class="reviews">
+    <section id="reviews" class="reviews">
         <div class="container">
             <h2 class="reviews__title"><b>Отзывы</b> наших клиентов</h2>
             <div class="reviews__inner row">
@@ -1920,7 +1889,7 @@
         </div>
     </section>
 </main>
-<footer class="footer">
+<footer id="footer" class="footer">
     <div class="container">
         <div class="footer__inner">
             <div class="row footer__top">
