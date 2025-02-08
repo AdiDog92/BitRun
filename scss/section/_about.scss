@@ -9,8 +9,29 @@
     border-radius: 24px;
     background: linear-gradient(99deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.14) 13.21%, rgba(255, 55, 48, 0.00) 13.24%), #FFF;
 
+    @media (max-width: 990.99px) {
+      margin-bottom: 75px;
+    }
+
+    @media (max-width: 767.99px) {
+      margin-bottom: 48px;
+      padding: {
+        left: 24px;
+        right: 24px;
+        bottom: 0;
+      };
+      text-align: center;
+    }
+
     .stats__banner-logo {
       margin-bottom: 18px;
+
+      img {
+        @media (max-width: 767.99px) {
+          display: block;
+          margin: 0 auto;
+        }
+      }
     }
 
     .stats__gold-partner {
@@ -19,15 +40,29 @@
       font-weight: 300;
       line-height: 120%;
       color: #474747;
+
+      @media(max-width: 990.99px) {
+        font-size: 28px;
+      }
     }
 
     .stats__description {
       max-width: 431px;
       margin-bottom: 49px;
+
+      @media (max-width: 767.99px) {
+        margin: 0 auto 24px;
+      }
     }
 
     .stats__info-wrapper {
       gap: 40px;
+
+      @media (max-width: 767.99px) {
+        justify-content: center;
+        margin-left: 0;
+      }
+
     }
 
     .stats__info {
@@ -54,6 +89,20 @@
       right: 0;
       width: 467px;
       object-fit: contain;
+
+      @media (max-width: 1199.99px) {
+        width: 520px;
+      }
+
+      @media (max-width: 990.99px) {
+        width: 413px;
+      }
+
+      @media (max-width: 767.99px) {
+        position: static;
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -63,16 +112,35 @@
 
     .stats__certificate-prev {
       max-width: 584px;
+
+      @media (max-width: 950.99px) {
+        margin: 0 auto 24px;
+      }
     }
 
     .stats__info-wrapper {
       max-width: 337px;
+
+      @media (max-width: 950.99px) {
+        display: flex;
+        justify-content: space-between;
+        max-width: 584px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      @media (max-width: 567.99px) {
+        flex-direction: column;
+      }
     }
 
     .stats__info {
       display: flex;
       padding: 0;
       margin-bottom: 16px;
+      @media (max-width: 950.99px) {
+        flex-direction: column;
+      }
 
       .stats {
         margin: {
@@ -88,12 +156,22 @@
         text-transform: uppercase;
         color: #f4f7f7;
         filter: drop-shadow(1px 1px 0 #FF8300) drop-shadow(-1px -1px 0 #FF8300) drop-shadow(1px -1px 0 #FF8300) drop-shadow(-1px 1px 0 #FF8300);
+        @media (max-width: 950.99px) {
+          margin: {
+            right: 0;
+          };
+        }
       }
 
       .text {
         margin: {
           left: 12px;
         };
+        @media (max-width: 950.99px) {
+          margin: {
+            left: 0;
+          };
+        }
       }
     }
   }
@@ -147,6 +225,7 @@
       &.four {
         z-index: 19;
       }
+
       &.one,
       &.five {
         z-index: 18;
@@ -165,3 +244,4 @@
     }
   }
 }
+

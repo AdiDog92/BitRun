@@ -6,6 +6,13 @@
     top: 23px;
   };
 
+  @media (max-width: 990.99px) {
+    margin-bottom: 80px;
+  }
+  @media (max-width: 767.99px) {
+    margin-bottom: 50px;
+  }
+
   .container-fluid {
     @media (max-width: 767.99px) {
       flex-direction: column;
