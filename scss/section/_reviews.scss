@@ -3,6 +3,13 @@
     bottom: 134px;
   };
 
+  @media (max-width: 990.99px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 767.99px) {
+    margin-bottom: 50px;
+  }
+
   h2 {
     max-width: 629px;
     margin: 0 auto 60px;
@@ -14,12 +21,22 @@
     b {
       font-weight: 800;
     }
+
+    @media (max-width: 767.99px) {
+      margin-bottom: 30px;
+      font-size: 32px;
+      text-align: center;
+    }
   }
 
   .reviews__inner {
     max-width: 1080px;
     margin: 0 auto 72px;
     gap: 24px;
+
+    @media (max-width: 767.99px) {
+      margin-bottom: 36px;
+    }
   }
 
   .reviews__card {
@@ -27,6 +44,23 @@
     padding: 35px 40px 33px 40px;
     border-radius: 24px;
     background: #FFF;
+
+    @media (max-width: 990.99px) {
+      width: calc(50% - 24px);
+      margin: {
+        left: auto;
+        right: auto;
+      };
+      padding: 24px;
+    }
+    @media (max-width: 767.99px) {
+      width: calc(100% - 24px);
+      margin: {
+        left: auto;
+        right: auto;
+      };
+      padding: 24px;
+    }
 
     .review__user {
       margin-bottom: 13px;
@@ -56,6 +90,10 @@
   .reviews__btn-group {
     gap: 24px;
 
+    @media (max-width: 767.99px) {
+      flex-direction: column-reverse;
+    }
+
     a {
       height: 56px;
       padding: 0 24px;
@@ -76,6 +114,7 @@
       &.reviews__btn-more {
         border: 1.5px solid #0082FF;
       }
+
       &.reviews__btn-ya {
         gap: 8px;
         background: #E7E7E7;
