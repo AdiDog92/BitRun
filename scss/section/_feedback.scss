@@ -60,6 +60,10 @@
       border-radius: 10px;
       border: 1px solid #BFBFBF;
 
+      @media (max-width: 567.99px) {
+        padding: 12px;
+      }
+
       &::placeholder {
         color: #ABABAB;
         line-height: 100%;
@@ -81,6 +85,11 @@
       border-radius: 16px;
       border: 1.5px solid #0082FF;
       transition: .3s ease;
+
+      @media (max-width: 567.99px) {
+        padding: 12px;
+        text-transform: lowercase;
+      }
 
       &:hover {
         opacity: .7;
