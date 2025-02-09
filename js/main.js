@@ -47,12 +47,7 @@ $(document).ready(() => {
         $buttons.removeClass('active');
         $(this).addClass('active');
 
-        // Удаляем все существующие слайдеры перед переключением
-        $('.price__slider').each(function () {
-            if ($(this).hasClass('slick-initialized')) {
-                $(this).slick('unslick');
-            }
-        });
+
 
         $allWrappers.css({
             opacity: 0,
@@ -61,6 +56,13 @@ $(document).ready(() => {
         });
 
         setTimeout(() => {
+            // Удаляем все существующие слайдеры перед переключением
+            $('.price__slider').each(function () {
+                if ($(this).hasClass('slick-initialized')) {
+                    $(this).slick('unslick');
+                }
+            });
+
             $allWrappers.addClass('d-none');
             $target.removeClass('d-none');
 
