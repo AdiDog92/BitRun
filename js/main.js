@@ -7,34 +7,33 @@ $(document).ready(() => {
         prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="bi bi-caret-left-fill"></i></button>',
         slidesToShow: 3,
         slidesToScroll: 1,
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             slidesToShow: 3,
-        //             slidesToScroll: 3,
-        //             infinite: true,
-        //             dots: true
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 600,
-        //         settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 2
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             slidesToShow: 1,
-        //             slidesToScroll: 1
-        //         }
-        //     }
-        //     // You can unslick at a given breakpoint now by adding:
-        //     // settings: "unslick"
-        //     // instead of a settings object
-        // ]
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '40px',
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '20px',
+                }
+            }
+        ]
     });
 
     $('.price').on('click', 'button[data-price]', function () {
@@ -47,6 +46,13 @@ $(document).ready(() => {
 
         $buttons.removeClass('active');
         $(this).addClass('active');
+
+        // Удаляем все существующие слайдеры перед переключением
+        $('.price__slider').each(function () {
+            if ($(this).hasClass('slick-initialized')) {
+                $(this).slick('unslick');
+            }
+        });
 
         $allWrappers.css({
             opacity: 0,
@@ -63,9 +69,49 @@ $(document).ready(() => {
                     opacity: 1,
                     transform: 'translateY(0)'
                 });
+
+                // Реинициализируем Slick Slider
+                $target.find('.price__slider')
+                $('.price__slider').slick({
+                    dots: false,
+                    infinite: true,
+                    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="bi bi-caret-right-fill"></i></button>',
+                    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="bi bi-caret-left-fill"></i></button>',
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 1,
+                            }
+                        },
+                        {
+                            breakpoint: 768,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                centerMode: true,
+                                centerPadding: '40px',
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                                centerMode: true,
+                                centerPadding: '20px',
+                            }
+                        }
+                    ]
+                });
+
             }, 10);
         }, 300);
-    })
+    });
+
 
     $('.advantages__slider').slick({
         // centerMode: true,
