@@ -3,6 +3,13 @@
     bottom: 133px;
   };
 
+  @media (max-width: 990.99px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 767.99px) {
+    margin-bottom: 50px;
+  }
+
   .services__title {
     max-width: 346px;
     margin: 0 auto 25px;
