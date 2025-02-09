@@ -48,7 +48,6 @@ $(document).ready(() => {
         $(this).addClass('active');
 
 
-
         $allWrappers.css({
             opacity: 0,
             transform: 'translateY(10px)',
@@ -143,4 +142,6 @@ $(document).ready(() => {
         //     }
         // ]
     });
+
+    new WOW().init();
 })
