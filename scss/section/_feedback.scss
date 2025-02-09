@@ -1,11 +1,27 @@
 .feedback {
   margin-bottom: 123px;
 
+  @media (max-width: 990.99px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 767.99px) {
+    margin-bottom: 50px;
+  }
+
   h2 {
     font-size: 38px;
     font-weight: 700;
     line-height: 160%;
     color: #242424;
+
+    @media (max-width: 990.99px) {
+      font-size: 30px;
+    }
+    @media (max-width: 767.99px) {
+      margin-bottom: 24px;
+      font-size: 24px;
+      text-align: center;
+    }
   }
 
   .feedback__inner {
@@ -18,6 +34,10 @@
     border-radius: 24px;
     background: #FFF;
 
+    @media (max-width: 990.99px) {
+      padding: 37px 27px;
+    }
+
     h3 {
       max-width: 391px;
       margin: 0 auto 34px;
@@ -26,6 +46,10 @@
       line-height: 120%;
       color: #242424;
       text-align: center;
+
+      @media (max-width: 767.99px) {
+        font-size: 20px;
+      }
     }
 
     input[name='tel'],
