@@ -13,13 +13,6 @@
     margin-bottom: 50px;
   }
 
-  .container-fluid {
-    @media (max-width: 767.99px) {
-      //flex-direction: column;
-      //justify-content: center;
-    }
-  }
-
   .header__list {
     max-width: 575px;
     width: 100%;
@@ -78,7 +71,6 @@
 
       @media (max-width: 767.99px) {
         right: 0;
-        //transform: translateX(50%);
       }
 
       a {
@@ -119,7 +111,6 @@
       };
     }
     @media (max-width: 767.99px) {
-      //flex-direction: column;
       justify-content: space-between;
       width: 100%;
       margin: 0 auto;
