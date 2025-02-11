@@ -115,33 +115,34 @@ $(document).ready(() => {
 
 
     $('.advantages__slider').slick({
-        // centerMode: true,
-        centerPadding: '60px',
+        centerMode: true,
+        centerPadding: '0px',
         slidesToShow: 3,
+        infinite: true,
+        variableWidth: false,
         appendArrows: $('.slider__button-wrapper'),
-        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="bi bi-caret-right-fill"></i></button>',
-        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="bi bi-caret-left-fill"></i></button>',
-        // responsive: [
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             arrows: false,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 3
-        //         }
-        //     },
-        //     {
-        //         breakpoint: 480,
-        //         settings: {
-        //             arrows: false,
-        //             centerMode: true,
-        //             centerPadding: '40px',
-        //             slidesToShow: 1
-        //         }
-        //     }
-        // ]
+        nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="bi bi-caret-right-fill"></i></button>',
+        prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="bi bi-caret-left-fill"></i></button>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '20px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '20px',
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
-
     new WOW().init();
 })
