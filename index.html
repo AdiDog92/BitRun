@@ -171,16 +171,13 @@
                             <img src="images/partners/4.png" alt="Vitra">
                         </div>
                         <div class="hero__partners-card col wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
-                            <img src="images/partners/1.png" alt="Disneyp">
+                            <img src="images/partners/5.png" alt="Disneyp">
                         </div>
                         <div class="hero__partners-card col wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                            <img src="images/partners/2.png" alt="Muz">
+                            <img src="images/partners/6.png" alt="Muz">
                         </div>
                         <div class="hero__partners-card col wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
-                            <img src="images/partners/3.png" alt="Gallery">
-                        </div>
-                        <div class="hero__partners-card col wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s">
-                            <img src="images/partners/4.png" alt="Vitra">
+                            <img src="images/partners/7.png" alt="Gallery">
                         </div>
                     </div>
                 </div>
@@ -233,13 +230,18 @@
                          alt="Богданов Александр - основатель компании BitRun">
                 </div>
                 <div class="stats__certificate row justify-content-between">
-                    <div class="stats__certificate-prev wow fadeInLeft" data-wow-duration="1s">
+                    <div
+                            class="stats__certificate-prev wow fadeInLeft"
+                            data-wow-duration="1s"
+                            data-bs-toggle="modal"
+                            data-bs-target="#certificateModal"
+                    >
                         <img src="images/certificate.png" alt="Сертификаты">
                     </div>
                     <div class="stats__info-wrapper">
                         <div class="stats__info wow fadeInRight" data-wow-duration="1s">
-                            <span class="stats">40%</span>
-                            <span class="text">рост оборота <br> клиентов</span>
+                            <span class="stats">35%</span>
+                            <span class="text">рост выручки клиентов <br> после внедрения</span>
                         </div>
                         <div class="stats__info wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
                             <span class="stats">до 5х</span>
@@ -247,7 +249,8 @@
                         </div>
                         <div class="stats__info wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
                             <span class="stats">на&nbsp;20%</span>
-                            <span class="text">процессы стали <br> быстрее&nbsp;дешевле</span>
+
+                            <span class="text">Процессы становятся <br> быстрее и&nbsp;дешевле</span>
                         </div>
                     </div>
                 </div>
@@ -281,7 +284,9 @@
                         </ul>
                         <div class="stats__specialist-info text-center">
                             <h3 class="stats__specialist-name">Андрей Емельянов</h3>
-                            <p class="stats__specialist-descr">Специалист отдела внедрения опыт <br> работы в IT: 8 лет
+                            <p class="stats__specialist-descr"><span
+                                    style="color: #929292">Опыт работы в IT: 8 лет</span> <br>
+                                Специалист отдела внедрения
                             </p>
                         </div>
                     </div>
@@ -294,8 +299,8 @@
             <div class="advantages__percent">
                 <div class="sum">97<span>%</span></div>
                 <p class="text__wrapper">
-                    <b>— знаем как решить!</b>
-                    <span>ваших проблем</span>
+                    <b>ваших проблем</b>
+                    <span>— знаем как решить!</span>
                 </p>
                 <div class="icon">
                     <svg width="343" height="353" viewBox="0 0 343 353" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2357,6 +2362,47 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Согласен</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно с сертификатами -->
+<div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="button-inner">
+                </div>
+                <div class="ceriticate__slider">
+                    <div class="ceriticate__slide">
+                        <img src="images/certificate/1.png" alt="Платиновый партнер">
+                    </div>
+                    <div class="ceriticate__slide">
+                        <img src="images/certificate/2.png" alt="Лидер привлечения">
+                    </div>
+                    <div class="ceriticate__slide">
+                        <img src="images/certificate/3.png" alt="E-commerce">
+                    </div>
+                    <div class="ceriticate__slide">
+                        <img src="images/certificate/4.png" alt="Коробочная версия">
+                    </div>
+                    <div class="ceriticate__slide">
+                        <img src="images/certificate/5.png" alt="Интеграция с 1С">
+                    </div>
+                    <div class="ceriticate__slide">
+                        <img src="images/certificate/6.png" alt="CRM">
+                    </div>
+                    <div class="ceriticate__slide">
+                        <img src="images/certificate/7.png" alt="Интернет-магазин + CRM">
+                    </div>
+                    <div class="ceriticate__slide">
+                        <img src="images/certificate/8.png" alt="Автоматизация PRO">
+                    </div>
+                    <div class="ceriticate__slide">
+                        <img src="images/certificate/9.png" alt="Сертификат топ-партнера">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

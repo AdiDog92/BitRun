@@ -114,7 +114,7 @@
   }
 
   .stats__certificate {
-    max-width: 985px;
+    max-width: 1080px;
     margin: 0 auto 58px;
 
     @media(max-width: 767.99px) {
@@ -130,7 +130,7 @@
     }
 
     .stats__info-wrapper {
-      max-width: 337px;
+      max-width: 461px;
 
       @media (max-width: 950.99px) {
         display: flex;
@@ -275,6 +275,40 @@
       }
 
     }
+  }
+}
+
+#certificateModal {
+  .modal-content {
+    border: none;
+    background-color: transparent;
+  }
+
+  .button-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    border: 1.5px solid #dfdfdf;
+    background: #fff;
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, .08);
+    transform: translateY(-50%);
+    color: #d9d9d9;
+    font-size: 20px;
+    transition: .3sease;
+  }
+  .ceriticate__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

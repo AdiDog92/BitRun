@@ -113,7 +113,6 @@ $(document).ready(() => {
         }, 300);
     });
 
-
     $('.advantages__slider').slick({
         centerMode: true,
         centerPadding: '0px',
@@ -144,5 +143,18 @@ $(document).ready(() => {
             }
         ]
     });
+
+
+    $('#certificateModal').on('shown.bs.modal', function () {
+        $('.ceriticate__slider').slick({
+            slidesToShow: 1,
+            appendArrows: $('#certificateModal .button-inner'),
+            nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="bi bi-caret-right-fill"></i></button>',
+            prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="bi bi-caret-left-fill"></i></button>',
+
+        });
+    });
+
+
     new WOW().init();
 })
