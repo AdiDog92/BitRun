@@ -27,10 +27,15 @@
 
   .services__description {
     max-width: 553px;
-    margin: 0 auto 50px;
+    margin: 0 auto 40px;
     font-size: 21px;
     line-height: 160%;
     color: #8A7777;
+
+    span {
+      color: #0082FF;
+    }
+
     @media(max-width: 767.99px) {
       margin-bottom: 24px;
       font-size: 16px;
@@ -63,11 +68,21 @@
       }
 
       p {
-        margin-bottom: 50px;
+        margin-bottom: 22px;
         color: #686868;
 
         @media (max-width: 567.99px) {
           margin-bottom: 32px;
+        }
+      }
+
+      ul {
+        li {
+          margin-bottom: 4px;
+          color: #000;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 150%;
         }
       }
 

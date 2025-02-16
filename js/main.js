@@ -55,7 +55,7 @@ $(document).ready(() => {
         });
 
         setTimeout(() => {
-            // Удаляем все существующие слайдеры перед переключением
+
             $('.price__slider').each(function () {
                 if ($(this).hasClass('slick-initialized')) {
                     $(this).slick('unslick');
@@ -71,7 +71,6 @@ $(document).ready(() => {
                     transform: 'translateY(0)'
                 });
 
-                // Реинициализируем Slick Slider
                 $target.find('.price__slider')
                 $('.price__slider').slick({
                     dots: false,
@@ -144,7 +143,6 @@ $(document).ready(() => {
         ]
     });
 
-
     $('#certificateModal').on('shown.bs.modal', function () {
         $('.ceriticate__slider').slick({
             slidesToShow: 1,
@@ -155,6 +153,51 @@ $(document).ready(() => {
         });
     });
 
-
+    $('.partners__slider').slick({
+        slidesToShow: 7,
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+        ]
+    });
+    $('.stats__slider').slick({
+        autoplay: true,
+        arrows: false,
+        slidesToShow: 5,
+        centerPadding: '-24px',
+        centerMode: true,
+        autoplaySpeed: 3000,
+    })
     new WOW().init();
 })

@@ -11,7 +11,7 @@
   }
 
   h2 {
-    margin-bottom: 64px;
+    margin-bottom: 18px;
     font-size: 48px;
     font-weight: 400;
     line-height: 160%;
@@ -23,14 +23,54 @@
     }
 
     @media(max-width: 767.99px) {
-      margin-bottom: 32px;
+      margin-bottom: 18px;
       font-size: 32px;
       text-align: center;
     }
   }
 
+  .cases__description {
+    margin-bottom: 25px;
+    color: #242424;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 160%;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+
+    span {
+      color: #0082FF;
+    }
+  }
+
   .partners {
     margin-bottom: 105px;
+
+    &__slider {
+      .slick-track {
+        display: flex;
+      }
+
+      .hero__partners-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 0 auto;
+        height: auto;
+        margin: 0 30px;
+
+        img {
+          margin: {
+            top: 12px;
+            bottom: 12px;
+          };
+        }
+      }
+    }
   }
 
   .cases__baner {
