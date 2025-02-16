@@ -156,6 +156,7 @@ $(document).ready(() => {
     $('.partners__slider').slick({
         slidesToShow: 7,
         autoplay: true,
+        swipeToSlide: true,
         arrows: false,
         autoplaySpeed: 3000,
         responsive: [
