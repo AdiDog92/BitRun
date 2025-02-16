@@ -116,7 +116,7 @@
 
     .stats__certificate-prev {
       position: relative;
-      max-width: 691px;
+      max-width: 584px;
       cursor: pointer;
 
       &::before {
@@ -162,7 +162,7 @@
     }
 
     .stats__info-wrapper {
-      max-width: 389px;
+      max-width: 461px;
 
       @media (max-width: 950.99px) {
         display: flex;
@@ -259,19 +259,22 @@
     }
 
     .stats__specialist-prev {
-      max-width: 691px;
+      max-width: 525px;
       height: 272px;
     }
 
     .stats__specialist-list {
       display: flex;
       align-items: center;
-      max-width: 450px;
     }
 
     .slick-track {
       padding: 12px;
     }
+    //
+    //.slick-list {
+    //  overflow: visible !important;
+    //}
 
     .stats__specialist-item {
       position: relative;
@@ -285,6 +288,7 @@
         height: 200px;
       }
 
+
       .stats__specialist-info {
         position: absolute;
         width: 227px;
@@ -297,11 +301,13 @@
           bottom: 0;
           left: -45px;
         }
+
       }
 
       &.slick-active {
         opacity: 1;
       }
+
 
       &.slick-center {
         z-index: 99;
