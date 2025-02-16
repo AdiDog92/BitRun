@@ -2,6 +2,7 @@ $(document).ready(() => {
 
     $('.price__slider').slick({
         dots: false,
+        swipeToSlide: true,
         infinite: true,
         nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="bi bi-caret-right-fill"></i></button>',
         prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="bi bi-caret-left-fill"></i></button>',
@@ -75,6 +76,7 @@ $(document).ready(() => {
                 $('.price__slider').slick({
                     dots: false,
                     infinite: true,
+                    swipeToSlide: true,
                     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style=""><i class="bi bi-caret-right-fill"></i></button>',
                     prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="bi bi-caret-left-fill"></i></button>',
                     slidesToShow: 3,
@@ -114,6 +116,7 @@ $(document).ready(() => {
 
     $('.advantages__slider').slick({
         centerMode: true,
+        swipeToSlide: true,
         centerPadding: '0px',
         slidesToShow: 3,
         infinite: true,
@@ -194,6 +197,7 @@ $(document).ready(() => {
     });
     $('.stats__slider').slick({
         autoplay: true,
+        swipeToSlide: true,
         arrows: false,
         slidesToShow: 5,
         centerPadding: '-24px',
