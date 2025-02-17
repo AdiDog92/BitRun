@@ -197,12 +197,43 @@ $(document).ready(() => {
     });
     $('.stats__slider').slick({
         autoplay: true,
+        autoplaySpeed: 2500,
         swipeToSlide: true,
         arrows: false,
-        slidesToShow: 5,
+        slidesToShow: 7,
         centerPadding: '-24px',
         centerMode: true,
-        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 568,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+        ]
     })
     new WOW().init();
+
+    $('form').on('submit', function (e) {
+        e.preventDefault(); // Предотвращаем стандартную отправку формы
+
+        // Собираем данные формы
+        const formData = $(this).serialize();
+
+        if (formData) {
+            $('#exampleModal').modal('show');
+            $('.modal-body-form').addClass('d-none');
+            $('.modal-body-thanks').removeClass('d-none');
+            e.target.reset();
+        }
+    });
+
+    $('button[type=reset]').on('click', function () {
+        $('#exampleModal').modal('hide');
+        $('.modal-body-form').removeClass('d-none');
+        $('.modal-body-thanks').addClass('d-none');
+        $('#modalForm')[0].reset();
+    });
+
+
 })

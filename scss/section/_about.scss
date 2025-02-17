@@ -110,20 +110,25 @@
     max-width: 1080px;
     margin: 0 auto 58px;
 
+    @media (max-width: 1078.99px) {
+      gap: 24px;
+      justify-content: center !important;
+    }
+
     @media(max-width: 767.99px) {
       margin-bottom: 24px;
     }
 
     .stats__certificate-prev {
       position: relative;
-      max-width: 584px;
+      max-width: 656px;
       cursor: pointer;
 
       &::before {
         content: '';
         position: absolute;
         z-index: 2;
-        inset: 0 12px 12px;
+        inset: 0 12px ;
         background-color: transparent;
         border-radius: 12px;
         transition: .3s ease;
@@ -162,7 +167,7 @@
     }
 
     .stats__info-wrapper {
-      max-width: 461px;
+      max-width: 389px;
 
       @media (max-width: 950.99px) {
         display: flex;
@@ -225,6 +230,7 @@
 
     @media (max-width: 990.99px) {
       align-items: center !important;
+      justify-content: center;
     }
 
     @media (max-width: 767.99px) {
@@ -236,6 +242,11 @@
       flex-direction: column;
       width: fit-content;
       margin-right: 59px;
+      @media (max-width: 990.99px) {
+        margin: {
+          right: 0;
+        };
+      }
       @media (max-width: 767.99px) {
         margin: {
           right: 0;
@@ -259,11 +270,12 @@
     }
 
     .stats__specialist-prev {
-      max-width: 525px;
+      max-width: 650px;
       height: 272px;
     }
 
     .stats__specialist-list {
+      position: relative;
       display: flex;
       align-items: center;
     }
@@ -271,10 +283,11 @@
     .slick-track {
       padding: 12px;
     }
-    //
-    //.slick-list {
-    //  overflow: visible !important;
-    //}
+
+    .slick-list {
+      padding: 0 35px;
+
+    }
 
     .stats__specialist-item {
       position: relative;
@@ -283,6 +296,7 @@
       height: 237px;
       margin: 0 -24px;
       opacity: 0;
+      transition: .3s ease;
 
       @media (max-width: 767.99px) {
         height: 200px;
@@ -292,14 +306,19 @@
       .stats__specialist-info {
         position: absolute;
         width: 227px;
-        bottom: -15px;
-        left: -30px;
+        bottom: 6px;
+        left: -50px;
         opacity: 0;
         transition: .3s ease;
 
         @media (max-width: 990.99px) {
           bottom: 0;
           left: -45px;
+        }
+
+        @media(max-width: 600px) {
+          bottom: -14px;
+          left: -63px;
         }
 
       }
@@ -329,6 +348,10 @@
   .modal-content {
     border: none;
     background-color: transparent;
+  }
+
+  .modal-body {
+    //max-width: 550px;
   }
 
   .button-inner {
